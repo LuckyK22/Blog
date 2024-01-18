@@ -1,5 +1,5 @@
 /* eslint-disable no-empty */
-import conf from "../Conf/Conf";
+import conf from "../../Conf/Conf";
 import { Client, ID, Databases, Storage, Query } from "appwrite";
 
 export class Service{
