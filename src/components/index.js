@@ -10,6 +10,8 @@ import RTE from "./RTE";
 import PostCard from "./PostCard";
 import Login from "./Login";
 import Signup from "./Signup";
+import PostForm from "./post-form/PostForm";
+import AuthLayout from "./AuthLayout"
 
 
 export {
@@ -25,4 +27,6 @@ export {
     PostCard,
     Login,
     Signup,
+    PostForm,
+    AuthLayout
 }
