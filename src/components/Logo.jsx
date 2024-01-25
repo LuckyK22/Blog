@@ -2,7 +2,7 @@
 
 function Logo() {
     return (
-        <div>Logo</div>
+        <div className="text-2xl font-bold">Logo</div>
     )
 }
 
