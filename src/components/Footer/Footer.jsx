@@ -8,7 +8,7 @@ function Footer() {
             <div className='flex justify-between max-w-7xl mx-auto'>
                 
                 <div className="text-sm ">
-                    &copy; Copyright 2023. All Rights Reserved by DevUI.
+                    &copy; Copyright 2023. All Rights Reserved by LuKa.
                 </div>
                 <div className="h-full">
                     <ul className='flex gap-8'>
