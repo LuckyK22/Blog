@@ -4,11 +4,11 @@ import Logo from '../Logo'
 
 function Footer() {
     return (
-        <section className="py-1  bg-slate-950 text-gray-200 w-full  px-4 ">
+        <section className="py-1  bg-slate-950 text-gray-200 w-full  px-4 fixed bottom-0">
             <div className='flex justify-between max-w-7xl mx-auto'>
                 
                 <div className="text-sm ">
-                    &copy; Copyright 2023. All Rights Reserved by LuKa.
+                    &copy; Copyright 2023. 
                 </div>
                 <div className="h-full">
                     <ul className='flex gap-8'>

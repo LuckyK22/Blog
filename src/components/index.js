@@ -1,7 +1,7 @@
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
+import Header from "./header/Header";
+import Footer from "./footer/Footer";
 import Button from "./Button";
-import LogoutBtn from "./Header/LogoutBtn";
+import LogoutBtn from "./header/LogoutBtn";
 import Input from "./input";
 import Logo from "./Logo"
 import Container from "./container/Container";
@@ -12,6 +12,7 @@ import Login from "./Login";
 import Signup from "./Signup";
 import PostForm from "./post-form/PostForm";
 import AuthLayout from "./AuthLayout"
+import NavbarLoader from "./skeletonLoader/NavbarLoader";
 
 
 export {
@@ -28,5 +29,6 @@ export {
     Login,
     Signup,
     PostForm,
-    AuthLayout
+    AuthLayout,
+    NavbarLoader
 }
