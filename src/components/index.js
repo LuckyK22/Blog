@@ -12,8 +12,7 @@ import Login from "./Login";
 import Signup from "./Signup";
 import PostForm from "./post-form/PostForm";
 import AuthLayout from "./AuthLayout"
-import NavbarLoader from "./skeletonLoader/NavbarLoader";
-
+import Loader from "./skeletonLoader/Loader";
 
 export {
     Header,
@@ -30,5 +29,5 @@ export {
     Signup,
     PostForm,
     AuthLayout,
-    NavbarLoader
+    Loader
 }
