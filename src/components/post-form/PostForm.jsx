@@ -32,7 +32,8 @@ export default function PostForm({ post }) {
             });
 
             if (dbPost) {
-                navigate(`/post/${dbPost.$id}`);
+                // navigate(`/post/${dbPost.$id}`);
+                navigate("/")
             }
         } else {
             const file = await appwriteService.uploadFile(data.image[0]);
@@ -44,6 +45,7 @@ export default function PostForm({ post }) {
 
                 if (dbPost) {
                     navigate(`/post/${dbPost.$id}`);
+                    navigate("/")
                 }
             }
         }

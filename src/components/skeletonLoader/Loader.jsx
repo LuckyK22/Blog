@@ -26,16 +26,16 @@ function Loader() {
                         borderRadius="5rem"
                         duration={2}
                     >
-                        <div class="w-full">
-                            <p class="px-6 me-48 mb-5">
+                        <div className="w-full">
+                            <div className="px-6 me-48 mb-5">
                                 <h3><Skeleton /></h3>
-                            </p>
+                            </div>
                             <h1><Skeleton height={300} /></h1>
-                            <div class="px-6 py-4">
-                                <h2 class=" mb-2"><Skeleton /></h2>
-                                <p class="text-base">
+                            <div className="px-6 py-4">
+                                <h2 className=" mb-2"><Skeleton /></h2>
+                                <div className="text-base">
                                     <h3><Skeleton /></h3>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </SkeletonTheme>
