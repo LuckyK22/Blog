@@ -58,7 +58,6 @@ export class Service{
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 slug
-            
             )
             return true
         } catch (error) {
@@ -97,6 +96,32 @@ export class Service{
     }
 
     // file upload service
+
+    async uploadProfileImage(file){
+        try{
+            return await this.bucket.createFile(
+                conf.appwriteProfileID,
+                ID.unique(),
+                file
+            )
+        }catch(error){
+            console.log("Appwrite Service :: Profile Picture Error", error)
+            return false
+        }
+    }
+
+    async deleteFile(fileId){
+        try {
+            await this.bucket.deleteFile(
+                conf.appwriteProfileID,
+                fileId
+            )
+            return true
+        } catch (error) {
+            console.log("Appwrite serive :: Profile Picture Deleted :: error", error);
+            return false
+        }
+    }
 
     async uploadFile(file){
         try {

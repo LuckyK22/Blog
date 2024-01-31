@@ -3,6 +3,7 @@ import appwriteService from "../appwrite/config";
 // import authService from "../appwrite/auth";
 import { Container, PostCard } from '../components'
 import { configureStore } from '@reduxjs/toolkit';
+import UserProfile from './UserProfile';
 
 function Home() {
     const [posts, setPosts] = useState([])
@@ -33,16 +34,21 @@ function Home() {
     }
     return (
         <div className='w-full py-8'>
-            <Container>
-                <div className=''>
-                    {posts.map((post) => (
-                        <div key={post.$id} className='p-2 w-1/2'>
-                            <PostCard {...post} />
+                <UserProfile />
+                <div className='w-1/2  float-right'>
+                    <Container>
+                        <div className="">
+                            {
+                                posts.map((post) => (
+                                    <div key={post.$id} className="p-2 w-full">
+                                        <PostCard {...post} />
+                                    </div>
+                                ))
+                            }
                         </div>
-                    ))}
+                    </Container>
                 </div>
-            </Container>
-        </div>
+            </div>
     )
 }
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Container, PostCard } from '../components/index'
 import appwriteService from '../appwrite/config'
-import UserProfile from './UserProfile';
+// import UserProfile from './UserProfile';
 
 function AllPost() {
 
@@ -17,7 +17,7 @@ function AllPost() {
     return (
         <>
             <div className='w-full py-8'>
-                <UserProfile />
+                {/* <UserProfile /> */}
                 <div className='w-1/2  float-right'>
                     <Container>
                         <div className="">

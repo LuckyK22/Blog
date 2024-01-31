@@ -14,7 +14,7 @@ function UserProfile() {
 
     return (
         <>
-            <div className='w-1/2 p-4'>
+            <div className='w-1/2 p-4 sticky top-0'>
                 <h3 className='text-3xl flex justify-center items-center'>Welcome &nbsp;<span className='font-semibold'>{userName.toLocaleUpperCase()}</span></h3>
             </div>
         </>
