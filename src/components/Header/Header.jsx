@@ -47,7 +47,7 @@ function Header() {
 
                         </Link>
                     </div>
-                    <ul className='flex ml-auto'>
+                    <ul className='flex ml-auto gap-5'>
                         {navItems.map((item) =>
                             item.active ? (
                                 <li key={item.name}>
